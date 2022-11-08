@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class KatyaKoksTest {
@@ -294,6 +295,7 @@ TC_11_06
 8. Подтвердить, что в поле Email пользователю будет показана ошибка “can't be blank”
  */
 
+    @Ignore
     @Test
     public void testWrongEmail() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "/Applications/ChromeDriver/chromedriver");
